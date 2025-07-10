@@ -1,15 +1,33 @@
-*.iml
-.gradle
+# Ignore IntelliJ/Android Studio specific files
+.idea/
+*.iws
+
+# Ignore all build directories in every module
+**/build/
+
+# Ignore generated files
+**/captures/
+**/intermediates/
+**/generated/
+
+# Kotlin/Compose cache
+.kotlinc/
+.compose-cache/
+
+# Logs
+*.log
+
+# APKs or aab files
+*.apk
+*.ap_
+
+# Keystore & signing config (important for release builds)
+*.jks
+*.keystore
+*.pem
+*.key
+
+# Gradle daemon files
+.gradle/
+
 /local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
