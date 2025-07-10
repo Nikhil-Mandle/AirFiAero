@@ -19,22 +19,22 @@ git clone https://github.com/Nikhil-Mandle/AirFiAero.git
 Endpoint used: https://raw.githubusercontent.com/Nikhil-Mandle/AirFiAero/main/airlines.json
 
 ## 🧪 Features Implemented
-✅ Multi-module clean architecture
-✅ Modern Jetpack Compose UI
-✅ MVVM with ViewModel & StateFlow
-✅ Retrofit for HTTP requests
-✅ Coil for async image loading with fallback
-✅ Hilt for dependency injection
-✅ Type-safe Navigation
-✅ Network availability check before fetching
-✅ Error UI when offline
-✅ Search functionality
-✅ Light & Dark theme support
+- ✅ Multi-module clean architecture
+- ✅ Modern Jetpack Compose UI
+- ✅ MVVM with ViewModel & StateFlow
+- ✅ Retrofit for HTTP requests
+- ✅ Coil for async image loading with fallback
+- ✅ Hilt for dependency injection
+- ✅ Type-safe Navigation
+- ✅ Network availability check before fetching
+- ✅ Error UI when offline
+- ✅ Search functionality
+- ✅ Light & Dark theme support
 
 ## ✨ Optional Bonus Features Implemented
-🔍 Search airlines by name using reactive filtering
-🌗 Dark mode support with Material You theming
-🏁 Splash Screen implemented as the app entry point
+- 🔍 Search airlines by name using reactive filtering
+- 🌗 Dark mode support with Material You theming
+- 🏁 Splash Screen implemented as the app entry point
 
 ## 🏗️ Architecture Overview
 
