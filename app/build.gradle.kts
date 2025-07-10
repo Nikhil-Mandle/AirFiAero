@@ -2,9 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-
-    id("kotlin-kapt")
-    id("dagger.hilt.android.plugin")
+    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.hilt.android)
 }
 
 android {
@@ -20,10 +19,12 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "BASE_URL", "\"https://raw.githubusercontent.com/Nikhil-Mandle/AirFiAero/main/\"")
+        buildConfigField(
+            "String",
+            "BASE_URL",
+            "\"https://raw.githubusercontent.com/Nikhil-Mandle/AirFiAero/main/\""
+        )
     }
-
-
 
     buildTypes {
         release {
@@ -73,9 +74,13 @@ dependencies {
     implementation(project(":domain"))
     implementation(project(":presentation"))
 
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+    // Splash Screen
+    implementation(libs.splashscreen)
+
+    // Retrofit + Gson
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.logging.interceptor)
 
     // Hilt
     implementation(libs.hilt.android)
@@ -84,10 +89,7 @@ dependencies {
     implementation(libs.androidx.hilt.navigation.compose)
     kapt(libs.androidx.hilt.compiler)
 
-    // Retrofit + Gson
+    implementation(libs.androidx.navigation.compose)
 
-    implementation("androidx.core:core-splashscreen:1.0.1")
-
-    implementation("androidx.navigation:navigation-compose:2.7.7")
 
 }

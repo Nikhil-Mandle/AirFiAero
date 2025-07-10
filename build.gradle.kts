@@ -4,8 +4,8 @@ plugins {
     alias(libs.plugins.kotlin.android) apply false
     alias(libs.plugins.kotlin.compose) apply false
     alias(libs.plugins.android.library) apply false
-    id("com.google.dagger.hilt.android") version "2.56.2" apply false
-    id("org.jetbrains.kotlin.plugin.serialization") version "2.1.10"
-    id("androidx.room") version "2.7.2" apply false
-    id("com.google.devtools.ksp") version "2.1.10-1.0.31" apply false
+    alias(libs.plugins.hilt.android) apply false
+    alias(libs.plugins.kotlin.kapt) apply false
+    alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.ksp) apply false
 }

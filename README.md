@@ -66,6 +66,8 @@ The application follows Clean Architecture principles with a multimodule structu
 
 **Multi-module Clean Architecture** – Separation of concerns across data, domain, and presentation layers
 
+**JUnit, MockK, Turbine** – Unit testing
+
 **Network Connectivity Monitoring** – Using ConnectivityManager to observe real-time internet status
 
 **Error Placeholder in Coil** – Enhances UX when image loading fails
@@ -73,7 +75,7 @@ The application follows Clean Architecture principles with a multimodule structu
 ## ⚙️ Possible Improvements
 📁 Add offline caching using Room or DataStore
 💾 Save favorite airlines locally
-🧪 Add UI & Unit tests for ViewModel and business logic
+🧪 Add UI tests for ViewModel and business logic
 
 ## 📸 Screenshots
 
@@ -87,3 +89,4 @@ The application follows Clean Architecture principles with a multimodule structu
 ---
 
 ▶️ [**Watch Demo Video on Google Drive**](https://drive.google.com/file/d/1ju8wpX5YCZx6mbo-i6uGtZELI9oZWB9a/view?usp=sharing)
+▶️ [**Install AirFir Aero App**](https://drive.google.com/file/d/1K4UVIVgc3-tV9UVFVlo2rxHLIH-uw6mj/view?usp=sharing)
